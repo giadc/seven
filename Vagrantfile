@@ -2,11 +2,11 @@
 # vi: set ft=ruby :
 
 #paths to scripts
-github_user = "davidxhill"
+github_user = "giadc"
 github_repo = "seven"
 github_branch = "master"
-path_to_scripts = "~/Desktop/cent7/giadc-centos"
-#path_to_scripts = "https://raw.githubusercontent.com/#{github_user}/#{github_repo}/#{github_branch}/scripts"
+#path_to_scripts = "/local/path/to/scripts"
+path_to_scripts = "https://raw.githubusercontent.com/#{github_user}/#{github_repo}/#{github_branch}/scripts"
 
 #server configs
 server_ip = "10.44.4.4"
@@ -35,6 +35,8 @@ include_beanstalkd = true
 
 # Node
 include_node = true
+
+# End of config options
 
 Vagrant.configure(2) do |config|
 
