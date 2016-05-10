@@ -19,7 +19,8 @@ if [[ ! -z $1 ]] && [[ $1 -eq 'true' ]]; then
     sudo ln -s /vagrant /var/www/html
 
     sudo setenforce 0 # Not 100% needed...but prevents the need to reload box directly after provisioning
-    sudo sed -i "s/SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/confsudo sed -i "s/User apache/User vagrant/" /etc/httpd/conf/httpd.conf
+    sudo sed -i "s/SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
+    sudo sed -i "s/User apache/User vagrant/" /etc/httpd/conf/httpd.conf
     sudo sed -i "s/Group apache/Group vagrant/" /etc/httpd/conf/httpd.conf
 else
     sudo echo "IncludeOptional sites-enabled/*.conf" >> /etc/httpd/conf/httpd.conf
