@@ -11,7 +11,7 @@ sudo rpm -Uvh remi-release-7.rpm epel-release-latest-7.noarch.rpm
 sudo yum install -y yum-utils
 sudo yum-config-manager --enable remi-php70
 
-sudo yum -y install php70 php70-php-cli php70-php-common php70-php-bcmath php70-php-dba php70-php-devel php70-php-embedded php70-php-fpm php70-php-gd php70-php-imap php70-php-interbase php70-php-intl php70-php-ldap php70-php-mbstring php70-php-mcrypt php70-php-mysql php70-php-odbc php70-php-opcache php70-php-pdo php70-php-pdo_dblib php70-php-pear php70-php-process php70-php-pspell php70-php-recode php70-php-tidy php70-php-xml php70-php-xmlrpc
+sudo yum -y install php70 php70-php-cli php70-php-common php70-php-bcmath php70-php-dba php70-php-devel php70-php-embedded php70-php-fpm php70-php-gd php70-php-imap php70-php-interbase php70-php-intl php70-php-ldap php70-php-mbstring php70-php-mcrypt php70-php-mysql php70-php-odbc php70-php-opcache php70-php-pdo php70-php-pdo_dblib php70-php-pear php70-php-process php70-php-pspell php70-php-recode php70-php-tidy php70-php-xml php70-php-xmlrpc php70-php-pecl-zip.x86_64 
 sudo ln -s /usr/bin/php70 /usr/bin/php
 
 sudo systemctl start php70-php-fpm.service
